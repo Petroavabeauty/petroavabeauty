@@ -1,78 +1,66 @@
+/* Pink maximalist poetic vibes */
 body {
+background: #ffe6f0;
+color: #4a1a3d;
+font-family: 'Pacifico', cursive, 'Sacramento', serif, sans-serif;
 margin: 0;
-font-family: 'Milo', sans-serif;
-background: #ffeaf4;
-color: #3d003d;
+padding: 0 2rem;
 text-align: center;
-padding: 20px;
 }
 
-.hero {
-background: linear-gradient(to right, #ffc3e2, #fff0f5);
-padding: 60px 20px;
-font-family: 'Baby Barbie', cursive;
+header {
+padding: 3rem 0 2rem;
+border-bottom: 2px solid #d45d7a;
 }
 
-.hero h1 {
-font-size: 48px;
-margin-bottom: 10px;
+h1 {
+font-size: 3rem;
+margin-bottom: 0.3rem;
 }
 
-.tagline {
-font-size: 20px;
-margin: 5px 0;
-}
-
-.cta-main {
-display: inline-block;
-margin-top: 20px;
-padding: 12px 30px;
-background: #ff6ec7;
-color: white;
-text-decoration: none;
-font-weight: bold;
-border-radius: 30px;
-}
-
-.brand-intro {
-padding: 40px 20px;
-background: #fff;
-color: #330033;
-}
-
-.quote {
+p {
+font-size: 1.2rem;
+margin-bottom: 2rem;
 font-style: italic;
-background-color: #ffdef0;
-padding: 30px 20px;
 }
 
-.contact form {
-display: flex;
-flex-direction: column;
-gap: 10px;
-margin: 0 auto;
-max-width: 400px;
-}
-
-.contact input,
-.contact textarea {
-padding: 10px;
-border-radius: 10px;
-border: 1px solid #ccc;
-}
-
-.contact button {
-background: #ff6ec7;
-border: none;
-padding: 10px;
-border-radius: 10px;
-color: white;
+nav a {
+margin: 0 1rem;
+text-decoration: none;
+color: #d45d7a;
 font-weight: bold;
-cursor: pointer;
+transition: color 0.3s ease;
+}
+
+nav a:hover {
+color: #a02e53;
+}
+
+section {
+margin: 4rem 0;
+}
+
+h2 {
+font-size: 2rem;
+margin-bottom: 1rem;
+border-bottom: 1px solid #d45d7a;
+display: inline-block;
+padding-bottom: 0.5rem;
 }
 
 footer {
-margin-top: 60px;
-padding: 20px;
-background: #fff0f5;
+padding: 2rem 0;
+border-top: 2px solid #d45d7a;
+font-size: 1rem;
+color: #a02e53;
+}
+
+footer a {
+color: #d45d7a;
+text-decoration: none;
+font-weight: bold;
+}
+
+footer a:hover {
+text-decoration: underline;
 }
