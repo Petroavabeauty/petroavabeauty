@@ -1,66 +1,122 @@
-/* Pink maximalist poetic vibes */
+
 body {
-background: #ffe6f0;
-color: #4a1a3d;
-font-family: 'Pacifico', cursive, 'Sacramento', serif, sans-serif;
-margin: 0;
-padding: 0 2rem;
-text-align: center;
+  font-family: 'Milo', sans-serif;
+  margin: 0;
+  background-color: #FCE6F2;
+  color: #E76695;
+  line-height: 1.6;
 }
 
 header {
-padding: 3rem 0 2rem;
-border-bottom: 2px solid #d45d7a;
+  text-align: center;
+  background-color: #FBA5CB;
+  padding: 2rem 1rem;
 }
 
-h1 {
-font-size: 3rem;
-margin-bottom: 0.3rem;
+header h1 {
+  font-family: 'Bisney Regular', cursive;
+  font-size: 3rem;
+  color: #EF4B8A;
 }
 
-p {
-font-size: 1.2rem;
-margin-bottom: 2rem;
-font-style: italic;
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
 
-nav a {
-margin: 0 1rem;
-text-decoration: none;
-color: #d45d7a;
-font-weight: bold;
-transition: color 0.3s ease;
+.hero-buttons {
+  margin-top: 1.5rem;
 }
 
-nav a:hover {
-color: #a02e53;
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  background: linear-gradient(to right, #FDC1E2, #E76695);
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
 }
 
-section {
-margin: 4rem 0;
+.cta-button:hover {
+  box-shadow: 0 0 12px #EF4B8A;
 }
 
-h2 {
-font-size: 2rem;
-margin-bottom: 1rem;
-border-bottom: 1px solid #d45d7a;
-display: inline-block;
-padding-bottom: 0.5rem;
+.cta-button.alt {
+  background: linear-gradient(to right, #FDC1D4, #E6A4A5);
 }
 
-footer {
-padding: 2rem 0;
-border-top: 2px solid #d45d7a;
-font-size: 1rem;
-color: #a02e53;
+.cta-button.wide {
+  width: 80%;
+  display: block;
+  margin: 1rem auto;
 }
 
-footer a {
-color: #d45d7a;
-text-decoration: none;
-font-weight: bold;
+.cta-section {
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
-footer a:hover {
-text-decoration: underline;
+.intro {
+  padding: 2rem 1rem;
+  background: #FAEDF5;
+  text-align: center;
+}
+
+.quote-banner {
+  background: #F6C1E3;
+  padding: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.contact-form {
+  padding: 2rem 1rem;
+  background: #FCE6F2;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #E6A4A5;
+  border-radius: 10px;
+}
+
+.contact-form button {
+  background: #EF4B8A;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #E497C8;
+  padding: 1rem;
+}
+
+.footer-links a {
+  margin: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer p {
+  text-align: center;
+  background: #E497C8;
+  color: white;
+  padding: 0.5rem;
+  margin: 0;
 }
