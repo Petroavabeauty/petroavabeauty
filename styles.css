@@ -1,122 +1,48 @@
 
 body {
-  font-family: 'Milo', sans-serif;
-  margin: 0;
-  background-color: #FCE6F2;
-  color: #E76695;
-  line-height: 1.6;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #FDC1E2, #FCE6F2);
+    color: #E76695;
+    text-align: center;
 }
-
-header {
-  text-align: center;
-  background-color: #FBA5CB;
-  padding: 2rem 1rem;
+.hero {
+    padding: 5rem 1rem;
+    background: linear-gradient(to bottom right, #FAEDF5, #E497C8);
+    color: #EF4B8A;
 }
-
-header h1 {
-  font-family: 'Bisney Regular', cursive;
-  font-size: 3rem;
-  color: #EF4B8A;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
-
-.subtitle {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
+.tagline, .sub-tagline {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
-
-.hero-buttons {
-  margin-top: 1.5rem;
+.cta-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: #FBA5CB;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #F6C1E3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.cta-button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  margin: 0.5rem;
-  background: linear-gradient(to right, #FDC1E2, #E76695);
-  border: none;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: all 0.3s ease;
+.cta-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #E76695;
 }
-
-.cta-button:hover {
-  box-shadow: 0 0 12px #EF4B8A;
+.quote-of-the-day {
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    background: #FCE6F2;
+    border-top: 2px solid #EF4B8A;
 }
-
-.cta-button.alt {
-  background: linear-gradient(to right, #FDC1D4, #E6A4A5);
-}
-
-.cta-button.wide {
-  width: 80%;
-  display: block;
-  margin: 1rem auto;
-}
-
-.cta-section {
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.intro {
-  padding: 2rem 1rem;
-  background: #FAEDF5;
-  text-align: center;
-}
-
-.quote-banner {
-  background: #F6C1E3;
-  padding: 1rem;
-  text-align: center;
-  font-style: italic;
-}
-
-.contact-form {
-  padding: 2rem 1rem;
-  background: #FCE6F2;
-  text-align: center;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 80%;
-  padding: 0.75rem;
-  margin: 0.5rem 0;
-  border: 1px solid #E6A4A5;
-  border-radius: 10px;
-}
-
-.contact-form button {
-  background: #EF4B8A;
-  color: white;
-  padding: 0.75rem 2rem;
-  border: none;
-  border-radius: 30px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: #E497C8;
-  padding: 1rem;
-}
-
-.footer-links a {
-  margin: 0.5rem 1rem;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer p {
-  text-align: center;
-  background: #E497C8;
-  color: white;
-  padding: 0.5rem;
-  margin: 0;
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #EC79AC;
+    color: white;
 }
