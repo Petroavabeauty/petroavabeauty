@@ -1,25 +1,105 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petroava Beauty</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Petroava Beauty | A New Era of Beauty</title>
+<link rel="stylesheet" href="styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header class="hero">
-        <h1>Petroava Beauty</h1>
-        <p class="tagline">Lashes for the girl who winks at trouble</p>
-        <p class="sub-tagline">Glow for the babe who stirs the bubble</p>
-        <a href="#" class="cta-btn">Shop the Collection</a>
-    </header>
-    <section class="quote-of-the-day">
-        <h2>Petroava Wisdom of the Day</h2>
-        <p>“Softness is a weapon too.”</p>
-    </section>
-    <footer>
-        <p>Follow us @petroavabeauty</p>
-    </footer>
+<header class="hero-section">
+<div class="hero-content">
+<h1 class="hero-title glow-text">PETROAVA BEAUTY</h1>
+<p class="hero-subtitle">A New Era of Beauty</p>
+<p class="hero-tagline">Lashes for the girl who winks at trouble<br />Glow for the babe who stirs the bubble</p>
+<div class="hero-buttons">
+<button class="glow-button">Shop the Collection</button>
+<button class="quiz-button">Take the Gloss Match Quiz</button>
+</div>
+<div class="video-container">
+<video autoplay muted loop playsinline>
+<source src="https://assets.codepen.io/605876/gloss-drip-loop.mp4" type="video/mp4" />
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
+</header>
+
+<section class="about-section">
+<h2>Petroava Beauty is not just a brand, it’s your soft life in a bottle.</h2>
+<p>It’s the cluster lash that lifts your spirit. The shimmer oil that hugs your skin like pink clouds. The gloss that feels like a secret spell. We create luxury you can touch, wear, and feel, without the heavy price tag.</p>
+<p>Inspired by the opulence of gold (aurum) and the glow of divine femininity, every product is made to make you feel expensive, soft, and powerful.</p>
+</section>
+
+<section class="product-highlight">
+<h2>Featured Glosses</h2>
+<div class="product-grid">
+<div class="product-card">
+<img src="https://i.imgur.com/UhFqNtT.png" alt="Pink Cloud Gloss" />
+<h3>Pink Cloud</h3>
+<p>Soft & dreamy, a secret spell on your lips.</p>
+<button class="glow-button small">Shop Now</button>
+</div>
+<div class="product-card">
+<img src="https://i.imgur.com/1mruo4x.png" alt="Sunset Syrup Gloss" />
+<h3>Sunset Syrup</h3>
+<p>Warm hues for the golden glow babe.</p>
+<button class="glow-button small">Shop Now</button>
+</div>
+<div class="product-card">
+<img src="https://i.imgur.com/3XMQ4ql.png" alt="Sugar Glaze Gloss" />
+<h3>Sugar Glaze</h3>
+<p>Sparkle & shine with every swipe.</p>
+<button class="glow-button small">Shop Now</button>
+</div>
+</div>
+</section>
+
+<section class="wisdom-banner glow-text">
+<h3>Petroava Beauty Wisdom of the Day</h3>
+<p id="wisdom-quote">“Power doesn’t shout. It glosses.”</p>
+</section>
+
+<section class="testimonial-section">
+<h2>Tea from the Petroava Gang</h2>
+<blockquote>“Wearing 'Milk and Money' made me feel bonita. I’ve never felt that milky before.” — @Abibahh</blockquote>
+<blockquote>“Your lashes are soo fluffy.” — @shinequeen</blockquote>
+</section>
+
+<section class="signup-section">
+<h2>Join the Petroava Beauty Inner Circle</h2>
+<p>Get secret drops, first looks, gloss rituals, and beauty notes straight from the founder. This is your invitation to step into the glow.</p>
+<form class="newsletter-form" action="#">
+<input type="email" placeholder="Your Email" required />
+<button class="glow-button small" type="submit">Unlock the Portal</button>
+</form>
+<p class="discount-note">Get 10% off your first spell (aka gloss)!</p>
+</section>
+
+<footer>
+<p>© 2025 Petroava Beauty | Soft. Luxe. Feminine. Powerful. Dreamy. Sacred.</p>
+<div class="social-links">
+<a href="https://instagram.com/petroavabeauty" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a href="https://tiktok.com/@petroavabeauty" target="_blank" rel="noopener noreferrer">TikTok</a>
+<a href="mailto:petroavabeauty@gmail.com">Email Us</a>
+</div>
+</footer>
+
+<script>
+const quotes = [
+"Power doesn’t shout. It glosses.",
+"Softness is a weapon too.",
+"Be sacred. Be seen.",
+"Every lip has a story. Make yours juicy.",
+"You don’t wear lashes to be pretty. You wear it to be you."
+];
+let index = 0;
+const quoteEl = document.getElementById("wisdom-quote");
+setInterval(() => {
+index = (index + 1) % quotes.length;
+quoteEl.textContent = `“${quotes[index]}”`;
+}, 8000);
+</script>
 </body>
 </html>
